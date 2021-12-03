@@ -1,1 +1,15 @@
-// Стили для Footer
+.footer__copyright-paragraph{
+    color: aqua;
+    
+}
+.footer__contact-paragraph{
+color: #212121;
+}
+.footer__contact-link{
+color: blueviolet;
+}
+.footer__copyright-list{
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
