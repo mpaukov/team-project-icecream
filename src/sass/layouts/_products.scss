@@ -1,4 +1,4 @@
-// Стили для products
+// Стили для products //
 .products__title1 {
   font-family: $secondary-font;
   font-weight: 400;
@@ -22,7 +22,7 @@
 }
 
 .products__list__about {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 22px;
