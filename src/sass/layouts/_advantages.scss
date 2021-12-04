@@ -1,1 +1,75 @@
-// Стили для advantages
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.advantages {
+  background: #fff5f6;
+  padding-left: 115px;
+  padding-right: 115px;
+  padding-bottom: 139px;
+  align-items: baseline;
+  margin-right: auto;
+  margin-left: auto;
+}
+.advantages__box {
+  display: flex;
+  flex-direction: row;
+}
+.advantages__elem {
+  flex-direction: row;
+  width: 330px;
+  height: 222px;
+  justify-content: center;
+}
+.advantages__elem1 {
+  margin-right: 30px;
+}
+.advantages__elem2 {
+  margin-right: 30px;
+}
+.advantages__list {
+  list-style: none;
+  padding: 0;
+}
+.advantages__icon {
+  width: 50px;
+  height: 50px;
+  list-style: none;
+  margin-bottom: 40px;
+}
+.advantages__icon1::before {
+  content: url(/image/png/icon1.png);
+}
+.advantages__icon2::before {
+  content: url(/image/png/icon2.png);
+}
+.advantages__icon3::before {
+  content: url(/image/png/icon3.png);
+}
+.advantages__fact {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.37;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  list-style: none;
+  margin-bottom: 15px;
+}
+.advantages__text {
+  font-family: DM Sans;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  list-style: none;
+}
