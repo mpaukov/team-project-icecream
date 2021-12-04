@@ -10,7 +10,7 @@
 }
 
 .header{
-    position: fixed;
+    position: absolute;
     padding-top: 38px;
     width: 100%;
 }
@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .header-nav__list{
@@ -58,6 +59,10 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+
+    &:focus, &:hover{
+        background-color: #ECEBEB;
+    }
 }
 
 .arrow__icon{
@@ -65,8 +70,18 @@
 }
 
 
+
+
+.hero__container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 171px;
+}
+
 .tittle__hero{
     font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
     font-size: 58px;
     line-height: 90.5%;
     letter-spacing: 0.04em;
@@ -76,6 +91,8 @@
 
 .tittle-hero__part{
     font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
     font-size: 38px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -83,20 +100,90 @@
     color: #FFFFFF;
 }
 
-.hero__tittle{
-
+.hero-tittle__btn{
+    padding-top: 25px;
 }
 
-.hero-tittle__btn{
+.button__primary{
+    margin-right: 15px;
+    width: 104px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #D41443;
 
+    &:hover, &:focus{
+        background-color: #C7133E;
+    }
+}
+
+.button__secondary{
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+    align-items: center;
+    text-align: center;
+    color: #D41443;
+
+    &:hover, &:focus{
+        background-color: #ECEBEB;
+    }
 }
 
 .tittle-hero__light{
     display: block;
 }
 
-.hero__container{
+.hero-right{
     display: flex;
-    justify-content: space-between;
 }
 
+.hero-right__seccond{
+    padding-top: 15px;
+}
+
+.hero-right__text{
+    display: block;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 1.15;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+}
+
+.hero-right__tittle{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+
+.picture__right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+.circle{
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 475px;
+    background: #FFA5BA;
+    border-radius: 50%;
+    width: 538px;
+    height: 538px;
+}
