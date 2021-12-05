@@ -274,3 +274,31 @@
 }
 
 
+
+
+.modal-location {
+  padding: 40px 10px 10px 10px;
+
+  background-color: $main-background-color;
+
+}
+
+.modal-location__map {
+  width: 400px;
+  height: 500px;
+
+  @media screen and (max-width: 469px) {
+    width: 300px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 550px;
+    height: 420px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 950px;
+    height: 650px;
+  }
+}
