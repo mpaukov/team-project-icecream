@@ -1,10 +1,10 @@
 // Стили для products //
 
 .products__title {
+  text-align: center;
+  position: relative;
   margin-top: 121px;
-}
 
-.roducts__title {
   @media screen and(min-width: 768px) {
     margin-top: 122px;
   }
@@ -14,6 +14,7 @@
 }
 
 .products__title1 {
+  position: relative;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 18px;
@@ -22,18 +23,14 @@
   text-transform: uppercase;
   color: $secondary-accent-color;
   margin-bottom: 15px;
-}
 
-.products__title1 {
   @media screen and(min-width: 768px) {
-    position: absolute;
     width: 205px;
     height: 30px;
     left: 282px;
     font-size: 26px;
     line-height: 1.15;
     text-align: center;
-    margin-bottom: 15px;
   }
   @media screen and(min-width: 1280px) {
     width: 249px;
@@ -42,11 +39,11 @@
     font-size: 30px;
     line-height: 1.13;
     text-align: center;
-    margin-bottom: 15px;
   }
 }
 
 .products__title2 {
+  position: relative;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 34px;
@@ -55,17 +52,16 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $main-accent-color;
-  padding-bottom: 146px;
-}
+  margin-bottom: 146px;
 
-.products__title2 {
   @media screen and(min-width: 768px) {
-    position: absolute;
     width: 283px;
     height: 55px;
+    left: 243px;
     font-size: 48px;
     line-height: 1.14;
     text-align: center;
+    margin-bottom: 150px;
   }
   @media screen and(min-width: 1280px) {
     width: 350px;
@@ -74,16 +70,9 @@
     font-size: 58px;
     line-height: 1.13;
     text-align: center;
+    margin-bottom: 259px;
   }
 }
-/*.products__title2 {
-  @media screen and(min-width: 768px) {
-    font-size: 48px;
-    line-height: 1.14;
-    text-align: center;
-    position: absolute;
-  }
-}*/
 
 .products__list__about {
   align-items: center;
@@ -91,20 +80,19 @@
 }
 
 .products__about {
+  left: auto;
+  right: auto;
+
   @media screen and(min-width: 768px) {
     position: absolute;
     display: flex;
-    width: calc(100% - 6 * 10px);
-    margin: 10px;
   }
   @media screen and(min-width: 1280px) {
     position: absolute;
     display: flex;
-    margin-left: 20px;
-    width: 100%;
-    height: 100%;
   }
 }
+
 .products__list__about {
   @media screen and(min-width: 768px) {
   }
@@ -134,16 +122,29 @@
   color: $main-light-color;
   margin-bottom: 30px;
   padding-top: 159px;
-  left: 52px;
   position: absolute;
+  left: 52px;
   width: 174px;
   height: 23px;
+
+  @media screen and(min-width: 768px) {
+    left: 22px;
+    padding-top: 152px;
+  }
+  @media screen and(min-width: 1280px) {
+    left: 60px;
+    font-size: 30px;
+    line-height: 1.13;
+    padding-top: 163px;
+    width: auto;
+    height: auto;
+  }
 }
 
 .products__list-icecream__img {
   display: flex;
   position: absolute;
-  top: -23%;
+  top: -24%;
   left: 15px;
   width: 249px;
   height: 252px;
@@ -153,46 +154,62 @@
 .products__list-milkshakes__img {
   display: flex;
   position: absolute;
-  top: -23%;
+  top: -24%;
   left: 16px;
   width: 249px;
   height: 252px;
 }
 
-.products__list-icecream {
-  position: relative;
-  width: 280px;
-  height: 485px;
-  background: $cream-card-background-color;
-  border-radius: 24px;
-}
-
-.products__list-icecream,
-.products__list-milkshakes,
-.products__list-icecoffe {
+.products__list-icecream__img,
+.products__list-icecoffee__img,
+.products__list-milkshakes__img {
   @media screen and(min-width: 768px) {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-top: 150px;
-    margin-left: 20px;
+    top: -21%;
+    left: 0;
+    width: 220px;
+    height: 226px;
+  }
+  @media screen and(min-width: 1280px) {
+    top: -40%;
+    left: 0;
+    width: 335px;
+    height: 335px;
   }
 }
 
-.products__list-icecoffe {
-  position: relative;
-  width: 280px;
-  height: 485px;
-  background: $coffee-card-background-color;
-  border-radius: 24px;
-  margin-top: 128px;
-}
-
+.products__list-icecream,
+.products__list-icecoffe,
 .products__list-milkshakes {
   position: relative;
   width: 280px;
   height: 485px;
-  background: $shake-card-background-color;
   border-radius: 24px;
   margin-top: 128px;
+
+  @media screen and(min-width: 768px) {
+    margin-top: 150px;
+    margin: 10px;
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-top: 150px;
+    margin: 12px;
+    width: 329px;
+    height: 525px;
+  }
+}
+
+.products__list-icecream {
+  background: $cream-card-background-color;
+}
+
+.products__list-icecoffe {
+  background: $coffee-card-background-color;
+}
+
+.products__list-milkshakes {
+  background: $shake-card-background-color;
 }
 
 .products__list__text {
@@ -206,14 +223,11 @@
   color: $main-light-color;
   margin-bottom: 30px;
   position: absolute;
-
   width: 200px;
   height: 124px;
   margin-left: 40px;
-  margin-top: 241px;
-}
+  margin-top: 248px;
 
-.products__list__text {
   @media screen and(min-width: 768px) {
     width: 198px;
     height: 124px;
@@ -229,11 +243,22 @@
     line-height: 1.75;
   }
 }
+
 .products__dot {
   position: absolute;
   margin-bottom: 30px;
   left: 127px;
   top: 212px;
+
+  @media screen and(min-width: 768px) {
+    left: 97px;
+    top: 205px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-bottom: 32px;
+    left: 152px;
+    top: 229px;
+  }
 }
 
 .dot {
@@ -244,18 +269,55 @@
   display: inline-block;
 }
 
+.products__btn__icecream {
+  @media screen and(min-width: 768px) {
+    background: $cream-card-background-color;
+  }
+  @media screen and(min-width: 1280px) {
+    background: $cream-card-background-color;
+  }
+}
+
+.products__btn__icecoffe {
+  @media screen and(min-width: 768px) {
+    background: $coffee-card-background-color;
+  }
+  @media screen and(min-width: 1280px) {
+    background: $coffee-card-background-color;
+  }
+}
+
+.products__btn__milkshakes {
+  @media screen and(min-width: 768px) {
+    background: $shake-card-background-color;
+  }
+  @media screen and(min-width: 1280px) {
+    background: $shake-card-background-color;
+  }
+}
+
 .products__btn {
   position: absolute;
   width: 40px;
   height: 40px;
   margin-top: 402px;
-}
 
-.products__btn {
   @media screen and(min-width: 768px) {
+    position: absolute;
+    display: block;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+    height: 100px;
     margin-top: 405px;
   }
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 1280px) {
+    position: absolute;
+    display: block;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: 100px;
     margin-top: 435px;
   }
 }
@@ -264,9 +326,19 @@
   width: 40px;
   height: 40px;
   margin-left: 119px;
+  margin-bottom: 43px;
   background-color: $main-light-color;
   border-radius: 50%;
   display: inline-block;
+
+  @media screen and(min-width: 768px) {
+    margin-top: 40px;
+    margin-left: 90px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-top: 62px;
+    margin-left: 145px;
+  }
 }
 
 .products__btn__link__icon {
