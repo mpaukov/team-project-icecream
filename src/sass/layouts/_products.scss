@@ -1,4 +1,18 @@
 // Стили для products //
+
+.products__title {
+  margin-top: 121px;
+}
+
+.roducts__title {
+  @media screen and(min-width: 768px) {
+    margin-top: 122px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-top: 126px;
+  }
+}
+
 .products__title1 {
   font-family: $secondary-font;
   font-weight: 400;
@@ -7,6 +21,29 @@
   text-align: center;
   text-transform: uppercase;
   color: $secondary-accent-color;
+  margin-bottom: 15px;
+}
+
+.products__title1 {
+  @media screen and(min-width: 768px) {
+    position: absolute;
+    width: 205px;
+    height: 30px;
+    left: 282px;
+    font-size: 26px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  @media screen and(min-width: 1280px) {
+    width: 249px;
+    height: 34px;
+    left: 515px;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
 
 .products__title2 {
@@ -18,31 +55,75 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $main-accent-color;
-  padding-bottom: 31px;
+  padding-bottom: 146px;
 }
+
+.products__title2 {
+  @media screen and(min-width: 768px) {
+    position: absolute;
+    width: 283px;
+    height: 55px;
+    font-size: 48px;
+    line-height: 1.14;
+    text-align: center;
+  }
+  @media screen and(min-width: 1280px) {
+    width: 350px;
+    height: 66px;
+    left: 464px;
+    font-size: 58px;
+    line-height: 1.13;
+    text-align: center;
+  }
+}
+/*.products__title2 {
+  @media screen and(min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    text-align: center;
+    position: absolute;
+  }
+}*/
 
 .products__list__about {
-  display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 22px;
 }
 
-.products__list-icecreame,
+.products__about {
+  @media screen and(min-width: 768px) {
+    position: absolute;
+    display: flex;
+    width: calc(100% - 6 * 10px);
+    margin: 10px;
+  }
+  @media screen and(min-width: 1280px) {
+    position: absolute;
+    display: flex;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.products__list__about {
+  @media screen and(min-width: 768px) {
+  }
+  @media screen and(min-width: 1280px) {
+  }
+}
+
+.products__list-icecream,
 .products__list-icecoffe,
 .products__list-milkshakes {
   width: 280px;
   height: 598px;
-  top: 726px;
   border-radius: 24px;
   &:not(:last-child) {
     margin-bottom: 16px;
   }
 }
 
-.products__list-icecreame__title-name,
-.products__list-icecoffe__title-name,
-.products__list-milkshakes__title-name {
+.products__list__title-name {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 20px;
@@ -50,19 +131,148 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: red;
-  padding-bottom: 30px;
+  color: $main-light-color;
+  margin-bottom: 30px;
+  padding-top: 159px;
+  left: 52px;
+  position: absolute;
+  width: 174px;
+  height: 23px;
 }
 
-.products__list-milkshakes__img {
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.products__list__img {
+.products__list-icecream__img {
+  display: flex;
+  position: absolute;
+  top: -23%;
+  left: 15px;
   width: 249px;
   height: 252px;
-  left: 36px;
-  top: 726px;
+}
+
+.products__list-icecoffee__img,
+.products__list-milkshakes__img {
+  display: flex;
+  position: absolute;
+  top: -23%;
+  left: 16px;
+  width: 249px;
+  height: 252px;
+}
+
+.products__list-icecream {
+  position: relative;
+  width: 280px;
+  height: 485px;
+  background: $cream-card-background-color;
+  border-radius: 24px;
+}
+
+.products__list-icecream,
+.products__list-milkshakes,
+.products__list-icecoffe {
+  @media screen and(min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+}
+
+.products__list-icecoffe {
+  position: relative;
+  width: 280px;
+  height: 485px;
+  background: $coffee-card-background-color;
+  border-radius: 24px;
+  margin-top: 128px;
+}
+
+.products__list-milkshakes {
+  position: relative;
+  width: 280px;
+  height: 485px;
+  background: $shake-card-background-color;
+  border-radius: 24px;
+  margin-top: 128px;
+}
+
+.products__list__text {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $main-light-color;
+  margin-bottom: 30px;
+  position: absolute;
+
+  width: 200px;
+  height: 124px;
+  margin-left: 40px;
+  margin-top: 241px;
+}
+
+.products__list__text {
+  @media screen and(min-width: 768px) {
+    width: 198px;
+    height: 124px;
+    margin-left: 11px;
+    margin-top: 248px;
+  }
+  @media screen and(min-width: 1280px) {
+    width: 241px;
+    height: 106px;
+    margin-left: 44px;
+    margin-top: 267px;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+.products__dot {
+  position: absolute;
+  margin-bottom: 30px;
+  left: 127px;
+  top: 212px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: $main-light-color;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.products__btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 402px;
+}
+
+.products__btn {
+  @media screen and(min-width: 768px) {
+    margin-top: 405px;
+  }
+  @media screen and(min-width: 768px) {
+    margin-top: 435px;
+  }
+}
+
+.products__btn__link {
+  width: 40px;
+  height: 40px;
+  margin-left: 119px;
+  background-color: $main-light-color;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.products__btn__link__icon {
+  position: absolute;
+  fill: $main-accent-color;
+  width: 11px;
+  height: 10px;
+  margin: 15px;
 }
