@@ -1,52 +1,92 @@
 <section class="products container">
-  <h3 class="products__title1">100% natural</h3>
+  <div class="products__title">
+  <h3 class="products__title1" >100% natural</h3>
     <h2 class="products__title2">products</h2>
-<ul class="list">
-  <li class="products__list-icecreame">
-    <div class="products__list__about">
-    <picture class="products__list__img">
+    </div>
+<ul class="list products__about">
+  <li class="products__list products__list-icecream">
+    <picture class="products__list-icecream__img">
+      <source srcset="./images/tablet/products/tablet-icecream1x.png 1x, ./images/tablet/products/tablet-icecream2x.png 2x" media="(max-width: 767px)">
+      <source srcset="./images/tablet/products/tablet-icecream1x.png 1x, ./images/tablet/products/tablet-icecream2x.png 2x" media="(max-width: 1279px)">
       <img srcset="./images/mobile/products/mobile-icecream1x.png 1x,
       ./images/mobile/products/mobile-icecream1x.png 2x"
       src="./images/mobile/products/mobile-icecream1x.png"
-      alt=""></div>
-      <h3 class="products__list-icecreame__title-name">
-        ice cream
-      </h3>
-      <p>
+      alt="ice cream">
+    </picture>
+      <h3 class="products__list__title-name">ice cream</h3>
+        <div class="products__dot">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      <p class="products__list__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
         aliqua facilisis.
       </p>
-    </picture>
+      <div class="products__btn products__btn__icecream">
+        <a href="#" class="link products__btn__link">
+          <svg class="products__btn__link__icon">
+            <use href="./images/icons.svg#icon-arrow-right">
+            </use>
+          </svg>
+        </a>
+      </div>
   </li>
-  <li class="products__list-icecoffe">
-    <div class="products__list-icecoffe__about">
-      <picture class="products__list-icecoffe__img">
-        <img srcset="
-        ./images/mobile/products/mobile-icecofee1x.png 1x,
-        ./images/mobile/products/mobile-icecofee1x.png 2x" src="./images/mobile/products/mobile-icecofee1x.png" alt=""></div>
-        <h3 class="products__list-icecoffe__title-name">
-          ice coffee
-        </h3>
-        <p>
+  <li class="products__list products__list-icecoffe">
+      <picture class="products__list-icecoffee__img">
+        <source srcset="./images/tablet/products/tablet-icecoffee1x.png 1x, ./images/tablet/products/tablet-icecoffee2x.png 2x"
+        media="(max-width: 767px)">
+        <source srcset="./images/desktop/products/desktop-icecoffee1x.png 1x, ./images/desktop/products/desktop-icecoffee2x.png 2x"
+        media="(max-width: 1279px)">
+        <img srcset="./images/mobile/products/mobile-icecoffee1x.png 1x,
+        ./images/mobile/products/mobile-icecoffee2x.png 2x" src="./images/mobile/products/mobile-icecoffee1x.png" alt="ice coffee">
+      </picture>
+        <h3 class="products__list__title-name">ice coffee</h3>
+          <div class="products__dot">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        <p class="products__list__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
           aliqua facilisis.
         </p>
-      </picture>
-      </li>
-  <li class="products__list-milkshakes">
-    <div class="products__list-milkshakes__about">
+        <div class="products__btn products__btn__icecoffe">
+          <a href="#" class="link products__btn__link">
+            <svg class="products__btn__link__icon">
+              <use href="./images/icons.svg#icon-arrow-right">
+              </use>
+            </svg>
+          </a>
+        </div>
+    </li>
+  <li class="products__list products__list-milkshakes">
       <picture class="products__list-milkshakes__img">
+        <source srcset="./images/tablet/products/tablet-milkshakes1x.png 1x, ./images/tablet/products/tablet-milkshakes2x.png 2x"
+        media="(max-width: 767px)">
+        <source srcset="./images/desktop/products/desktop-milkshakes1x.png 1x, ./images/desktop/products/desktop-milkshakes2x.png 2x"
+        media="(max-width: 1279px)">
         <img srcset="./images/mobile/products/mobile-milkshakes1x.png 1x,
-            ./images/mobile/products/mobile-milkshakes1x.png 2x" src="./images/mobile/products/mobile-milkshakes1x.png" alt=""></div>
-        <h3 class="products__list-milkshakes__title-name">
-          milkshakes
-        </h3>
-        <p>
+            ./images/mobile/products/mobile-milkshakes1x.png 2x" src="./images/mobile/products/mobile-milkshakes1x.png" alt="milkshakes">
+      </picture>
+        <h3 class="products__list__title-name">milkshakes</h3>
+          <div class="products__dot">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <p class="products__list__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
           aliqua facilisis.
-        </p>
-      </picture>
-      </li>
+          </p>
+          <div class="products__btn products__btn__milkshakes">
+            <a href="#" class="link products__btn__link">
+              <svg class="products__btn__link__icon">
+                <use href="./images/icons.svg#icon-arrow-right">
+                </use>
+              </svg>
+            </a>
+          </div>
+  </li>
 </ul>
-  </div>
 </section>
