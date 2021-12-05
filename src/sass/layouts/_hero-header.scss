@@ -1,189 +1,193 @@
-.hero-section{
-    width: 100%;
-    background-color: #ffb8ca;
-    height: 665px;
+.hero-section {
+  width: 100%;
+  background-color: #ffb8ca;
+  height: 665px;
 }
 
-.logo{
-    position: relative;
-    left: -70px;
+.logo {
+  position: relative;
+  left: -70px;
 }
 
-.header{
-    position: absolute;
-    padding-top: 38px;
-    width: 100%;
+.header {
+  position: absolute;
+  padding-top: 38px;
+  width: 100%;
 }
 
-.header__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-.header-nav__list{
-    display: flex;
-    align-items: center;
+.header-nav__list {
+  display: flex;
+  align-items: center;
 }
 
-.header-nav__link{
-    padding-right: 16px;
-    padding-left: 16px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    color: #ffffff;
+.header-nav__link {
+  padding-right: 16px;
+  padding-left: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  color: #ffffff;
 
-    &:hover, &:focus{
-       color: #D41443;
-    }
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 }
 
-.button{
-    align-items: center;
-    text-align: center;
-    justify-items: center;
-    cursor: pointer;
-    border-radius: 22px;
-    border: none;
-    color: #D41443;
+.button {
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  cursor: pointer;
+  border-radius: 22px;
+  border: none;
+  color: #d41443;
 }
 
-.header__btn{
-    width: 159px;
-    height: 44px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
+.header__btn {
+  width: 159px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
 
-    &:focus, &:hover{
-        background-color: #ECEBEB;
-    }
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
 }
 
-.arrow__icon{
-    margin-left: 12px;
+.arrow__icon {
+  margin-left: 12px;
 }
 
-
-
-
-.hero__container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 171px;
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 171px;
 }
 
-.tittle__hero{
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 58px;
-    line-height: 90.5%;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #D41443;
+.tittle__hero {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 90.5%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 }
 
-.tittle-hero__part{
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 38px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+.tittle-hero__part {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
-.hero-tittle__btn{
-    padding-top: 25px;
+.hero-tittle__btn {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @media screen and(min-width:1280px) {
+    margin-bottom: 56px;
+  }
 }
 
-.button__primary{
-    margin-right: 15px;
-    width: 104px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 1.28;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: #FFFFFF;
-    background-color: #D41443;
+.button__primary {
+  margin-right: 15px;
+  width: 104px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #d41443;
 
-    &:hover, &:focus{
-        background-color: #C7133E;
-    }
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
 }
 
-.button__secondary{
-    width: 138px;
-    height: 40px;
-    font-size: 14px;
-    line-height: 1.28;
-    align-items: center;
-    text-align: center;
-    color: #D41443;
+.button__secondary {
+  width: 138px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
 
-    &:hover, &:focus{
-        background-color: #ECEBEB;
-    }
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
-.tittle-hero__light{
-    display: block;
+.tittle-hero__light {
+  display: block;
 }
 
-.hero-right{
-    display: flex;
+.hero-right {
+  display: flex;
 }
 
-.hero-right__seccond{
-    padding-top: 15px;
+.hero-right__seccond {
+  padding-top: 15px;
 }
 
-.hero-right__text{
-    display: block;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 46px;
-    line-height: 1.15;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #D41443;
+.hero-right__text {
+  display: block;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 1.15;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 }
 
-.hero-right__tittle{
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: right;
-    color: #FFFFFF;
+.hero-right__tittle {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #ffffff;
 }
 
-
-.picture__right{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+.picture__right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
-
-.circle{
-    position: absolute;
-    margin-top: 52px;
-    margin-left: 475px;
-    background: #FFA5BA;
-    border-radius: 50%;
-    width: 538px;
-    height: 538px;
+.circle {
+  position: absolute;
+  margin-top: 52px;
+  margin-left: 475px;
+  background: #ffa5ba;
+  border-radius: 50%;
+  width: 538px;
+  height: 538px;
 }
