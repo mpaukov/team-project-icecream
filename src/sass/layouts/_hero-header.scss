@@ -36,11 +36,11 @@
   display: flex;
   cursor: pointer;
   align-items: center;
-  color: #ffffff;
+  color: $main-light-color;
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: $main-accent-color;
   }
 }
 
@@ -51,7 +51,7 @@
   cursor: pointer;
   border-radius: 22px;
   border: none;
-  color: #d41443;
+  color: $main-accent-color;
 }
 
 .header__btn {
