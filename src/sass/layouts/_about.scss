@@ -5,9 +5,15 @@ $about-background-color: #fff5f6;
 // var
 
 .about {
+  padding-top: 125px;
   padding-bottom: 39px;
 
   background-color: $about-background-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
 }
 
 .about__title-label {
@@ -34,6 +40,30 @@ $about-background-color: #fff5f6;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
+// tablet
+.about__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 56px;
+  }
+}
+// tablet
+
+.about__thumb {
+  min-height: 280px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 340px;
+    margin-right: 17px;
+  }
 }
 
 .about__text {
@@ -45,6 +75,10 @@ $about-background-color: #fff5f6;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 49px;
+  }
 }
 
 .about__description {
@@ -63,10 +97,13 @@ $about-background-color: #fff5f6;
   @extend %button;
   padding-left: 37px;
   padding-right: 37px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: $main-accent-color;
   background-color: #fff;
 
+  min-height: 44px;
   font-weight: bold;
   font-size: 14px;
   line-height: 0.8;
