@@ -197,7 +197,6 @@
   @include font(inherit, 12px, 500, 1.5, 0.04em, $secondary-dark-color);
 
   @media screen and (min-width: 768px) {
-    @include font(inherit, 14px, 500, 1.83, 0.04em, $secondary-dark-color);
     font-size: 14px;
     line-height: 1.83;
   }
@@ -230,10 +229,6 @@
     width: 192px;
     margin-right: 0;
     margin-left: 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 174px;
   }
 }
 
@@ -277,3 +272,5 @@
     margin-bottom: 0;
     }
 }
+
+
