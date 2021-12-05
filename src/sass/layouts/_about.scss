@@ -1,7 +1,166 @@
 // Стили для about
 
-.test {
-  height: 50px;
-  width: 50px;
-  background-color: #1212;
+// var
+$about-background-color: #fff5f6;
+// var
+
+.about {
+  padding-top: 125px;
+  padding-bottom: 39px;
+
+  background-color: $about-background-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 39px;
+  }
 }
+
+.about__title-label {
+  margin-bottom: 15px;
+
+  color: $secondary-accent-color;
+
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 0.85;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__title {
+  margin-bottom: 26px;
+  color: $main-accent-color;
+
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 0.87;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
+.about__thumb {
+  min-width: 280px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 340px;
+    margin-right: 17px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    min-width: 516px;
+    margin-right: 74px;
+  }
+}
+
+.about__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about__text {
+  margin-bottom: 47px;
+
+  color: $main-dark-color;
+
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 49px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
+
+.about__description {
+  margin-bottom: 21px;
+
+  color: $secondary-dark-color;
+
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
+}
+
+.about__button {
+  @extend %button;
+  padding-left: 37px;
+  padding-right: 37px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: $main-accent-color;
+  background-color: #fff;
+
+  min-height: 44px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.8;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+// tablet
+.about__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 56px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    display: none;
+  }
+}
+// --tablet //
+
+// desktop //
+.about__desktop {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about__div {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-remover {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+// --desktop //
