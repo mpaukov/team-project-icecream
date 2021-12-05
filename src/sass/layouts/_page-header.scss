@@ -1,1 +1,46 @@
+.page__header {
+  position: absolute;
 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  height: 83px;
+
+  & .container {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-top: 37px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      padding-top: 37px;
+    }
+  }
+}
+
+.logo__link {
+  display: block;
+  padding-top: 6px;
+
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    left: -70px;
+  }
+}
+
+.menu__thumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}

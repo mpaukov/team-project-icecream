@@ -61,6 +61,15 @@
   font-size: 16px;
   line-height: 21px;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    left: 70px;
+  }
+
   &:focus,
   &:hover {
     background-color: #ecebeb;
@@ -192,129 +201,131 @@
   height: 538px;
 }
 
-
-
-.picture__right{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+.picture__right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
-
-.circle{
-    position: absolute;
-    margin-top: 52px;
-    margin-left: 475px;
-    background: #FFA5BA;
-    border-radius: 50%;
-    width: 538px;
-    height: 538px;
+.circle {
+  position: absolute;
+  margin-top: 52px;
+  margin-left: 475px;
+  background: #ffa5ba;
+  border-radius: 50%;
+  width: 538px;
+  height: 538px;
 }
 
 // <!-- START mobile-menu --> //
 
-.burger-btn{
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    line-height: 0;
+.burger-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
 
-    @media screen and (min-width: 768px){
-        display: none;
-    }
+  @media screen and(min-width:768px) {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
-.burger-icon{
-    width: 20px;
-    height: 12px;
+.burger-icon {
+  width: 20px;
+  height: 12px;
 }
 
-.mobile-menu{
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 40px;
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
 
-    background-color: grey;
+  background-color: grey;
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu.is-open{
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
-.close-btn{
-    position: absolute;
-    top: 23px;
-    right: 28px;
+.close-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
 
-    width: 20px;
-    height: 12px;
+  width: 20px;
+  height: 12px;
 
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    line-height: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  line-height: 0;
 }
 
-.close-btn-icon{
-    width: 14px;
-    height: 14px;
+.close-btn-icon {
+  width: 14px;
+  height: 14px;
 }
 
-.burger__btn{
-    width: 209px;
-    height: 44px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
+.burger__btn {
+  width: 209px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
 }
 
-.mobile-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.mobile{
-    display: block;
+.mobile {
+  display: block;
 }
 
-.mobile-menu__nav{
-    margin: 0;
-    padding: 0;
+.mobile-menu__nav {
+  margin: 0;
+  padding: 0;
 }
 
-.mobile-menu-nav__item{
-    border: 1px solid #E18298;
-    width: 250px;
-    height: 42px;
+.mobile-menu-nav__item {
+  border: 1px solid #e18298;
+  width: 250px;
+  height: 42px;
 }
 
-.mobile-menu-nav__link{
-    padding-top: 13px;
-    padding-bottom: 11px;
-    padding-left: 21px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.28;
-    display: flex;
-    align-items: center;
-    // color: #FFFFFF;
+.mobile-menu-nav__link {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 21px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  align-items: center;
+  // color: #FFFFFF;
 }
