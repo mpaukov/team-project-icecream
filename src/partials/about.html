@@ -9,7 +9,8 @@
       <h2 class="about__title">how it’s made?</h2>
       <div class="about__tablet">
         <div class="about__thumb">
-          <img src="" alt="cow">
+          <img class="about__img" 
+          src="./images/mobile/about/cow-1x.png" alt="cow">
         </div>
         <div class="about__description-div">
           <p class="about__text">
@@ -24,8 +25,34 @@
           </p>
         </div>
       </div>
-      <button class="about__button" type="button">
-        Read more
-      </button>
+      <div class="btn-remover">
+        <button class="about__button" type="button">
+          Read more
+        </button>
+      </div>
+      
+
+      <div class="about__desktop">
+        <div class="about__thumb">
+          <img class="about__img"
+          srcset="./images/mobile/about/cow-1x.png 1x, ./images/mobile/about/cow-2x.png 2x"
+          src="./images/mobile/about/cow-1x.png" alt="cow">
+        </div>
+        <div class="about__div">
+          <p class="about__text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+            Maecenas eleifend erat at justo fringilla.
+          </p>
+          <p class="about__description">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+          
+            Aliquam erat volutpat. Aenean accumsan.
+          </p>
+          <button class="about__button" type="button">
+            Read more
+          </button>
+        </div> 
+      </div>
   </div>
 </section>

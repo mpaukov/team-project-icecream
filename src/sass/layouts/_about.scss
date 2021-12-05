@@ -14,6 +14,10 @@ $about-background-color: #fff5f6;
     padding-top: 130px;
     padding-bottom: 66px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 39px;
+  }
 }
 
 .about__title-label {
@@ -46,24 +50,24 @@ $about-background-color: #fff5f6;
   }
 }
 
-// tablet
-.about__tablet {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: flex-end;
-
-    margin-bottom: 56px;
-  }
-}
-// tablet
-
 .about__thumb {
-  min-height: 280px;
+  min-width: 280px;
 
   @media screen and (min-width: 768px) {
     min-width: 340px;
     margin-right: 17px;
   }
+
+  @media screen and(min-width: 1280px) {
+    min-width: 516px;
+    margin-right: 74px;
+  }
+}
+
+.about__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .about__text {
@@ -79,6 +83,11 @@ $about-background-color: #fff5f6;
   @media screen and (min-width: 768px) {
     margin-bottom: 49px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+  }
 }
 
 .about__description {
@@ -91,6 +100,11 @@ $about-background-color: #fff5f6;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
 }
 
 .about__button {
@@ -114,3 +128,39 @@ $about-background-color: #fff5f6;
     background-color: #ecebeb;
   }
 }
+
+// tablet
+.about__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 56px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    display: none;
+  }
+}
+// --tablet //
+
+// desktop //
+.about__desktop {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about__div {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-remover {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+// --desktop //
