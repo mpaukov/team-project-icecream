@@ -1,3 +1,7 @@
+* {
+  font-style: normal;
+}
+
 .about {
   padding-top: 125px;
   padding-bottom: 39px;
@@ -183,3 +187,68 @@
   }
 }
 // --desktop //
+
+// modal //
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-about {
+  width: 450px;
+  min-height: 500px;
+  padding: 40px 40px;
+  background-color: #ffb8ca;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),
+    url(../images/mobile/hero/icecream-@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.modal__btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.modal__title {
+  margin-bottom: 35px;
+
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 0.9;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-align: center;
+
+  color: $main-accent-color;
+}
+
+.modal__subtitle {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
+.modal__text {
+  margin-bottom: 25px;
+
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 166%;
+
+  color: $secondary-dark-color;
+}
+// --modal //
