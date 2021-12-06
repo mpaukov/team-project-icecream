@@ -1,16 +1,11 @@
 .page__header {
-  position: absolute;
-  z-index: 2;
-
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  height: 83px;
+  background-color: $hero-primary-background-color;
 
   & .container {
+    z-index: 2;
+    position: relative;
+    background-color: transparent;
     width: 320px;
-    margin-right: auto;
-    margin-left: auto;
 
     @media screen and (min-width: 768px) {
       width: 768px;
