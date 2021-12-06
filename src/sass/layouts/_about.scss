@@ -2,6 +2,11 @@
   padding-top: 125px;
   padding-bottom: 39px;
 
+  background-image: url(../images/mobile/about/bckg-milk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 90%;
+
   background-color: $about-background-color;
 
   @media screen and (min-width: 768px) {
