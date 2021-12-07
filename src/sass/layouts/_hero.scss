@@ -121,6 +121,7 @@
     align-items: flex-end;
   }
 }
+
 .milk__text-thumb {
   width: 114px;
   height: 75px;
@@ -155,6 +156,15 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transform: rotate(0);
+  transition: transform $duration $function;
+
+  &:hover,
+  &:focus {
+    transform: rotate(-90deg);
+  }
 }
 
 .milk__svg {
