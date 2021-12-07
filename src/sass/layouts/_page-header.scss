@@ -1,21 +1,15 @@
 .page__header {
-  background-color: $hero-primary-background-color;
+  margin-bottom: 137px;
+  position: relative;
+  z-index: 2;
 
-  & .container {
-    z-index: 2;
-    position: relative;
-    background-color: transparent;
-    width: 320px;
+  @media screen and(min-width:768px) {
+    padding-top: 38px;
+    margin-bottom: 15px;
+  }
 
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      padding-top: 37px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-      padding-top: 37px;
-    }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 84px;
   }
 }
 

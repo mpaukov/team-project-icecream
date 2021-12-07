@@ -5,6 +5,7 @@
 
   @media screen and (min-width: 768px) {
     min-height: 399px;
+    padding-bottom: 28px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -14,6 +15,11 @@
 
 .hero .container {
   position: relative;
+}
+
+.hero__heading {
+  position: relative;
+  z-index: 1;
 }
 
 .hero__title {
@@ -61,19 +67,22 @@
 }
 
 .hero-image__thumb {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -24%);
   width: 346px;
   height: 420px;
 
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 368px;
-    transform: translate(80%, 4%);
+    transform: translate(-20%, -35%);
   }
   @media screen and (min-width: 1280px) {
     width: 538px;
     height: 594px;
-    transform: translate(60%, 9%);
+    transform: translate(-50%, -38%);
   }
 }
 
@@ -99,13 +108,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -49%);
-}
-
-.hero__heading {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
 }
 
 .milk__thumb {
@@ -167,10 +169,12 @@
   }
 
   position: absolute;
-  transform: translate(300%, -74%);
+  right: 0;
+  bottom: 0;
+  transform: translate(0%, 21%);
 
   @media screen and (min-width: 1280px) {
-    transform: translate(260%, -53%);
+    transform: translate(0%, 12%);
   }
 }
 
@@ -184,9 +188,9 @@
   letter-spacing: 0.04em;
 
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  transform: translate(-34px, 60%);
+  transform: translate(-34px, -80%);
 }
 .label__items {
   &:not(:last-child) {
