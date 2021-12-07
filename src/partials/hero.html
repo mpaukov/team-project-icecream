@@ -1,12 +1,21 @@
 <section class="hero" id="hero">
   <div class="container">
     <include src="./partials/page-header.html"></include>
+
     <div class="hero__heading">
       <h1 class="hero__title">ice cream made with <span class="hero__accent">passion</span></h1>
-      <div class="hero-tittle__btn">
-        <button class="button button__primary" type="button">Products</button>
-        <button class="button button__secondary" type="button">How it’s made?</button>
-      </div>
+      <ul class="hero-tittle__btn">
+        <li>
+          <a class="hero-button hero-button__primary" href="./index.html#section-products"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hero-button hero-button__secondary" href="./index.html#section-about"
+            >How it’s made?</a
+          >
+        </li>
+      </ul>
       <div class="milk__thumb">
         <div class="milk__picture">
           <picture>
@@ -27,11 +36,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
-          <div class="milk-svg__thumb">
+          <button class="milk-svg__thumb" type="button">
             <svg class="milk__svg">
               <use href="./images/icons.svg#icon-arrow-right"></use>
             </svg>
-          </div>
+          </button>
         </div>
       </div>
       <div class="girl__thumb">
