@@ -1,8 +1,7 @@
-<section class="contacts">
+<section class="contacts" id="section-contacts">
   <div class="container">
     <h2 class="is-hidden">Contacts</h2>
     <ul class="contacts__list">
-  
       <li class="contacts__item">
         <p class="contacts__place-name contacts__place-name--beige">cafe</p>
         <p class="contacts__city">Chicago</p>
@@ -22,10 +21,11 @@
             <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
           </li>
           <li>
-            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a></li>
+            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+          </li>
         </ul>
       </li>
-  
+
       <li class="contacts__item">
         <p class="contacts__place-name contacts__place-name--green">foodtruck</p>
         <p class="contacts__city">Los Angeles</p>
@@ -45,10 +45,11 @@
             <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
           </li>
           <li>
-            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a></li>
+            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+          </li>
         </ul>
       </li>
-  
+
       <li class="contacts__item">
         <p class="contacts__place-name contacts__place-name--beige">cafe</p>
         <p class="contacts__city">New York</p>
@@ -68,44 +69,44 @@
             <a href="tel:+610383766284" class="contacts__link">+61(0) 383 766 284</a>
           </li>
           <li>
-            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a></li>
+            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+          </li>
         </ul>
       </li>
-  
     </ul>
-  <div class="contacts__wrapper-btn">
-    <button type="button" class="contacts_btn contacts__btn--locations" data-modal-location-open>
-      Our Locations
-    </button>
-  
-    <button type="button" class="contacts_btn contacts__btn--franchise" data-modal-franchise-open>
-      Franchise
-    </button>
-  </div>
-    
-  </div>
-  </section>
+    <div class="contacts__wrapper-btn">
+      <button type="button" class="contacts_btn contacts__btn--locations" data-modal-location-open>
+        Our Locations
+      </button>
 
-  
+      <button type="button" class="contacts_btn contacts__btn--franchise" data-modal-franchise-open>
+        Franchise
+      </button>
+    </div>
+  </div>
+</section>
 
 <!-- модалка с картой -->
 
+<div class="backdrop is-hidden" data-modal-location>
+  <div class="modal modal-location">
+    <button type="button" class="modal__close-btn" data-modal-location-close>
+      <svg class="modal__close-icon" width="18" height="18">
+        <use href="./images/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
 
-
-  <div class="backdrop is-hidden" data-modal-location>
-    <div class="modal modal-location">
-      <button type="button" class="modal__close-btn" data-modal-location-close>
-        <svg class="modal__close-icon" width="18" height="18">
-          <use href="./images/sprite.svg#icon-modal-close"></use>
-        </svg>
-      </button>
-
-      <div class="modal-location__map">
-        <iframe class="modal-location__map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d380508.6384799765!2d-88.01216164177788!3d41.83424659201121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smicrosoft!5e0!3m2!1sru!2sua!4v1638704648559!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-
+    <div class="modal-location__map">
+      <iframe
+        class="modal-location__map"
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d380508.6384799765!2d-88.01216164177788!3d41.83424659201121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smicrosoft!5e0!3m2!1sru!2sua!4v1638704648559!5m2!1sru!2sua"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
     </div>
   </div>
+</div>
 
 <!-- модалка с франшизой -->
 
@@ -118,14 +119,21 @@
     </button>
 
     <div>
-      <p class="modal-franchise__text modal-franchise__title">We are open for partnership and offer favorable franchising conditions</p>
+      <p class="modal-franchise__text modal-franchise__title">
+        We are open for partnership and offer favorable franchising conditions
+      </p>
       <p class="modal-franchise__text"></p>
-      <a href="https://docs.google.com/document/d/1UtwyOmAMHt5A3RYal45czz1v-dY0EP5M_eWqhT27csQ/edit?usp=sharing" target="blanck" class="modal-franchise__text modal-franchise__text--link">
-        Here you can read the franchise agreement</a>
-        <p class="modal-franchise__text">
-          If you are interested in cooperation or have any questions, please leave your contacts 
-        </p>
-        <img src="" alt="">
+      <a
+        href="https://docs.google.com/document/d/1UtwyOmAMHt5A3RYal45czz1v-dY0EP5M_eWqhT27csQ/edit?usp=sharing"
+        target="blanck"
+        class="modal-franchise__text modal-franchise__text--link"
+      >
+        Here you can read the franchise agreement</a
+      >
+      <p class="modal-franchise__text">
+        If you are interested in cooperation or have any questions, please leave your contacts
+      </p>
+      <img src="" alt="" />
     </div>
     <form action="#" class="modal-franchise__form">
       <label class="modal-franchise__field">
@@ -178,17 +186,17 @@
       </label>
 
       <label for="country" class="modal-franchise__field">Country</label>
-        <select name="country" id="country" class="modal-franchise__country">
-          <option value="Australia" class="modal-franchise__option">Australia</option>
-          <option value="China" class="modal-franchise__option">China</option>
-          <option value="Denmar" class="modal-franchise__option">Denmark</option>
-          <option value="Finland" class="modal-franchise__option">Finland</option>
-          <option value="France" class="modal-franchise__option">France</option>
-          <option value="Japan" class="modal-franchise__option">Japan</option>
-          <option value="Ukraine" class="modal-franchise__option">Ukraine</option>
-          <option value="USA" class="modal-franchise__option" selected>USA</option>
-        </select>
-      
+      <select name="country" id="country" class="modal-franchise__country">
+        <option value="Australia" class="modal-franchise__option">Australia</option>
+        <option value="China" class="modal-franchise__option">China</option>
+        <option value="Denmar" class="modal-franchise__option">Denmark</option>
+        <option value="Finland" class="modal-franchise__option">Finland</option>
+        <option value="France" class="modal-franchise__option">France</option>
+        <option value="Japan" class="modal-franchise__option">Japan</option>
+        <option value="Ukraine" class="modal-franchise__option">Ukraine</option>
+        <option value="USA" class="modal-franchise__option" selected>USA</option>
+      </select>
+
       <button class="modal-franchise__button" type="submit">Send</button>
     </form>
   </div>
