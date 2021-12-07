@@ -9,17 +9,23 @@
   background-image: url(../images/mobile/about/bckg-milk.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 100% 90%;
+  background-position: 50% 80%;
 
   background-color: $about-background-color;
 
   @media screen and (min-width: 768px) {
+    background-image: none;
     padding-top: 130px;
     padding-bottom: 66px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 39px;
+
+    background-image: url(../images/mobile/about/bckg-milk.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 80%;
   }
 }
 
@@ -73,15 +79,21 @@
   height: auto;
 }
 
-.about__text {
-  margin-bottom: 47px;
+.about__description-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
-  color: $main-dark-color;
+.about__text {
+  margin-bottom: 32px;
 
   font-family: $primary-font;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
+
+  color: $main-dark-color;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 31px;
@@ -123,7 +135,6 @@
   @extend %button;
   padding-left: 37px;
   padding-right: 37px;
-  margin-left: auto;
   margin-right: auto;
 
   color: $main-accent-color;
@@ -174,11 +185,6 @@
     display: flex;
     align-items: center;
   }
-}
-
-.about__div {
-  display: flex;
-  flex-direction: column;
 }
 
 .btn-remover {
