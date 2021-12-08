@@ -11,21 +11,15 @@
   pointer-events: none;
 }
 .advantages {
-  padding-left: 20px;
-  padding-right: 70px;
-  padding-bottom: 97px;
+  padding-bottom: 48px;
+  padding-top: 38px;
   align-items: baseline;
-  margin-right: auto;
-  margin-left: auto;
+
   background: #fff5f6;
   @media screen and (min-width: 768px) {
-    padding-left: 26px;
-    padding-right: 76px;
     padding-bottom: 140px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 115px;
-    padding-right: 115px;
     padding-bottom: 139px;
   }
 }
@@ -43,15 +37,15 @@
 }
 .advantages__elem {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 38px;
-  height: 156px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+
   @media screen and (min-width: 768px) {
+    flex-direction: row;
     height: 226px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   @media screen and (min-width: 1280px) {
     height: 222px;
