@@ -11,21 +11,21 @@
   pointer-events: none;
 }
 .advantages {
-  padding-left: 20px;
-  padding-right: 70px;
+  // padding-left: 20px;
+  // padding-right: 70px;
   padding-bottom: 97px;
   align-items: baseline;
   margin-right: auto;
   margin-left: auto;
   background: #fff5f6;
   @media screen and (min-width: 768px) {
-    padding-left: 26px;
-    padding-right: 76px;
+    // padding-left: 26px;
+    // padding-right: 76px;
     padding-bottom: 140px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 115px;
-    padding-right: 115px;
+    // padding-left: 115px;
+    // padding-right: 115px;
     padding-bottom: 139px;
   }
 }
@@ -82,13 +82,13 @@
   }
 }
 .advantages__icon1::before {
-  content: url(/images/png/icon1.png);
+  content: url('../images/png/icon1.png');
 }
 .advantages__icon2::before {
-  content: url(/images/png/icon2.png);
+  content: url('../images/png/icon2.png');
 }
 .advantages__icon3::before {
-  content: url(/images/png/icon3.png);
+  content: url('../images/png/icon3.png');
 }
 .advantages__fact {
   font-family: Titan One;
