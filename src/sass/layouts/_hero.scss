@@ -2,10 +2,10 @@
   overflow: hidden;
   min-height: 502px;
   background-color: $hero-primary-background-color;
-  padding-top: 83px;
+
   @media screen and (min-width: 768px) {
     min-height: 399px;
-    padding-top: 102px;
+    padding-bottom: 28px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -15,6 +15,11 @@
 
 .hero .container {
   position: relative;
+}
+
+.hero__heading {
+  position: relative;
+  z-index: 1;
 }
 
 .hero__title {
@@ -62,19 +67,22 @@
 }
 
 .hero-image__thumb {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -23%);
   width: 346px;
   height: 420px;
 
   @media screen and (min-width: 768px) {
     width: 324px;
     height: 368px;
-    transform: translate(80%, 4%);
+    transform: translate(-20%, -35%);
   }
   @media screen and (min-width: 1280px) {
     width: 538px;
     height: 594px;
-    transform: translate(60%, 9%);
+    transform: translate(-35%, -38%);
   }
 }
 
@@ -102,13 +110,6 @@
   transform: translate(-50%, -49%);
 }
 
-.hero__heading {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
 .milk__thumb {
   @media screen and (max-width: 767px) {
     display: none;
@@ -120,6 +121,7 @@
     align-items: flex-end;
   }
 }
+
 .milk__text-thumb {
   width: 114px;
   height: 75px;
@@ -154,6 +156,15 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transform: rotate(0);
+  transition: transform $duration $function;
+
+  &:hover,
+  &:focus {
+    transform: rotate(-90deg);
+  }
 }
 
 .milk__svg {
@@ -168,10 +179,12 @@
   }
 
   position: absolute;
-  transform: translate(300%, -74%);
+  right: 0;
+  bottom: 0;
+  transform: translate(0%, 21%);
 
   @media screen and (min-width: 1280px) {
-    transform: translate(260%, -53%);
+    transform: translate(0%, 12%);
   }
 }
 
@@ -185,9 +198,9 @@
   letter-spacing: 0.04em;
 
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  transform: translate(-34px, 60%);
+  transform: translate(-34px, -80%);
 }
 .label__items {
   &:not(:last-child) {

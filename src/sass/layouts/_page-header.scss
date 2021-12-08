@@ -1,26 +1,15 @@
 .page__header {
-  position: absolute;
+  margin-bottom: 137px;
+  position: relative;
   z-index: 2;
 
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  height: 83px;
+  @media screen and(min-width:768px) {
+    padding-top: 38px;
+    margin-bottom: 15px;
+  }
 
-  & .container {
-    width: 320px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      padding-top: 37px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-      padding-top: 37px;
-    }
+  @media screen and(min-width:1280px) {
+    margin-bottom: 84px;
   }
 }
 
@@ -58,8 +47,8 @@
   @media screen and (max-width: 767px) {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
+    right: 0;
+    width: 280px;
     height: 100vh;
     padding-top: 60px;
     padding-left: 20px;
@@ -76,7 +65,7 @@
     top: 0;
     right: 0;
     width: 254px;
-    height: 1020px;
+    height: 100vh;
     padding-top: 60px;
     padding-left: 34px;
     padding-right: 34px;
@@ -157,5 +146,50 @@
 .js-close-menu {
   @media screen and (min-width: 1280px) {
     display: none;
+  }
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  cursor: pointer;
+  border-radius: 22px;
+  border: none;
+  color: $main-accent-color;
+}
+.hero-button__primary {
+  margin-right: 15px;
+  width: 104px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $main-light-color;
+  background-color: $main-accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $button-accent-hover-color;
+  }
+}
+
+.hero-button__secondary {
+  width: 138px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  color: $main-accent-color;
+  background-color: $main-light-color;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
   }
 }
