@@ -1,22 +1,28 @@
-// Стили для products //
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 122px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    padding-top: 126px;
+  }
+}
 .products__title {
   text-align: center;
-  position: relative;
-  margin-top: 121px;
   margin-bottom: 146px;
 
   @media screen and(min-width: 768px) {
-    margin-top: 122px;
     margin-bottom: 150px;
   }
   @media screen and(min-width: 1280px) {
-    margin-top: 126px;
     margin-bottom: 259px;
   }
 }
 
 .products__title1 {
-  position: relative;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 18px;
@@ -38,7 +44,6 @@
   }
 }
 .products__title2 {
-  position: relative;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 34px;
@@ -61,107 +66,67 @@
 }
 
 .products__about {
-  margin-bottom: 98px;
-  left: auto;
-  right: auto;
-
-  @media screen and(min-width: 768px) {
-    margin-bottom: 112px;
-    display: flex;
-  }
-  @media screen and(min-width: 1280px) {
-    margin-bottom: 119px;
-    display: flex;
-  }
 }
+
 .products__list {
   position: relative;
-  width: 280px;
+  padding-top: 161px;
+  padding-bottom: 41px;
+  &:not(:last-child) {
+    margin-bottom: 140px;
+  }
+
   border-radius: 24px;
-  margin-top: 128px;
-  padding-top: 157px;
 
   @media screen and(min-width: 768px) {
-    margin-top: 150px;
-    margin: 10px;
-    width: 220px;
   }
   @media screen and(min-width: 1280px) {
-    margin-top: 150px;
-    margin: 12px;
-    width: 330px;
   }
 }
 .products__list-icecream::before {
   position: absolute;
   content: url('../images/mobile/products/mobile-icecream1x.png');
-  width: 249px;
-  height: 252px;
-  top: -24%;
-  left: 16px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @media screen and(min-width: 768px) {
     content: url('../images/tablet/products/tablet-icecream1x.png');
-    width: 220px;
-    height: 224px;
-    top: -20.5%;
-    left: -2px;
   }
 
   @media screen and(min-width: 1280px) {
     content: url('../images/desktop/products/desktop-icecream1x.png');
-    width: 335px;
-    height: 335px;
-    top: -40%;
-    left: -2px;
   }
 }
 
 .products__list-icecoffe::before {
   position: absolute;
   content: url('../images/mobile/products/mobile-icecoffee1x.png');
-  width: 249px;
-  height: 252px;
-  top: -24%;
-  left: 16px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @media screen and(min-width: 768px) {
     content: url('../images/tablet/products/tablet-icecoffee1x.png');
-    width: 220px;
-    height: 224px;
-    top: -20.5%;
-    left: 0;
   }
 
   @media screen and(min-width: 1280px) {
     content: url('../images/desktop/products/desktop-icecoffee1x.png');
-    width: 335px;
-    height: 335px;
-    top: -40%;
-    left: 0;
   }
 }
 .products__list-milkshakes::before {
   position: absolute;
   content: url('../images/mobile/products/mobile-milkshakes1x.png');
-  width: 249px;
-  height: 252px;
-  top: -24%;
-  left: 16px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   @media screen and(min-width: 768px) {
     content: url('../images/tablet/products/tablet-milkshakes1x.png');
-    width: 220px;
-    height: 224px;
-    top: -20.5%;
-    left: -2px;
   }
 
   @media screen and(min-width: 1280px) {
     content: url('../images/desktop/products/desktop-milkshakes1x.png');
-    width: 335px;
-    height: 335px;
-    top: -40%;
-    left: -2px;
   }
 }
 .products__list__title-name {
@@ -222,6 +187,7 @@
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 30px;
+  margin-bottom: 30px;
 
   @media screen and(min-width: 768px) {
     padding-left: 11px;
@@ -236,24 +202,20 @@
   }
 }
 .products__btn {
+  display: block;
   width: 40px;
   height: 40px;
-  margin-top: 30px;
-  margin-left: 119px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: $main-light-color;
   border-radius: 50%;
-  margin-bottom: 45px;
+
   border: 1px $main-light-color;
 
   @media screen and(min-width: 768px) {
-    margin-top: 40px;
-    margin-left: 90px;
-    margin-bottom: 40px;
   }
   @media screen and(min-width: 1280px) {
-    margin-top: 62px;
-    margin-left: 145px;
-    margin-bottom: 50px;
   }
 }
 
