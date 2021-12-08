@@ -1,5 +1,4 @@
 // Стили для products //
-
 .products__title {
   text-align: center;
   position: relative;
@@ -38,7 +37,6 @@
     text-align: center;
   }
 }
-
 .products__title2 {
   position: relative;
   font-family: $secondary-font;
@@ -76,7 +74,6 @@
     display: flex;
   }
 }
-
 .products__list {
   position: relative;
   width: 280px;
@@ -95,8 +92,6 @@
     width: 330px;
   }
 }
-
-
 .products__list-icecream::before {
   position: absolute;
   content: url('../images/mobile/products/mobile-icecream1x.png');
@@ -123,7 +118,6 @@
 }
 
 .products__list-icecoffe::before {
-
   position: absolute;
   content: url('../images/mobile/products/mobile-icecoffee1x.png');
   width: 249px;
@@ -147,7 +141,6 @@
     left: 0;
   }
 }
-
 .products__list-milkshakes::before {
   position: absolute;
   content: url('../images/mobile/products/mobile-milkshakes1x.png');
@@ -155,7 +148,6 @@
   height: 252px;
   top: -24%;
   left: 16px;
-
   @media screen and(min-width: 768px) {
     content: url('../images/tablet/products/tablet-milkshakes1x.png');
     width: 220px;
@@ -172,7 +164,6 @@
     left: -2px;
   }
 }
-
 .products__list__title-name {
   font-family: $secondary-font;
   font-weight: 400;
@@ -213,25 +204,21 @@
 .products__list-icecream {
   background: $cream-card-background-color;
 }
-
 .products__list-icecoffe {
   background: $coffee-card-background-color;
 }
-
 .products__list-milkshakes {
   background: $shake-card-background-color;
 }
-
-.products__list__title-name {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.155;
+.products__list__text {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: $main-light-color;
-
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 30px;
@@ -248,9 +235,7 @@
     line-height: 1.75;
   }
 }
-
 .products__btn {
-
   width: 40px;
   height: 40px;
   margin-top: 30px;
@@ -283,5 +268,6 @@
   fill: $main-accent-color;
   width: 11px;
   height: 10px;
+
   margin: 0 auto;
 }
