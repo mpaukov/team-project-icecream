@@ -84,6 +84,19 @@
   padding-top: 161px;
   padding-bottom: 41px;
   margin-bottom: 0;
+
+  @media screen and (max-width: 479px) {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 140px;
@@ -94,6 +107,15 @@
     flex-basis: calc((100% - 3 * 20px) / 3);
     margin-left: 10px;
     margin-right: 10px;
+    max-width: 220px;
+  }
+  @media screen and (max-width: 1279px) {
+  }
+  @media screen and(min-width: 1280px) {
+    flex-basis: calc((100% - 3 * 24px) / 3);
+    margin-left: 12px;
+    margin-right: 12px;
+    max-width: 335px;
   }
 }
 
