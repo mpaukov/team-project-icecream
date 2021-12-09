@@ -74,7 +74,6 @@
 .products__list {
   position: relative;
   padding-top: 161px;
-  padding-bottom: 41px;
   margin-bottom: 0;
 
   @media screen and (max-width: 479px) {
@@ -206,6 +205,17 @@
 .products__list-milkshakes {
   background: $shake-card-background-color;
 }
+
+.products__text-btn {
+  padding-bottom: 45px;
+  @media screen and(min-width: 768px) {
+    padding-bottom: 40px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding-bottom: 50px;
+  }
+}
+
 .products__list__text {
   font-family: $primary-font;
   font-style: normal;
@@ -217,44 +227,46 @@
   color: $main-light-color;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 30px;
   margin-top: 30px;
-  margin-bottom: 30px;
 
   @media screen and(min-width: 768px) {
     padding-left: 11px;
     padding-right: 11px;
+    padding-bottom: 40px;
   }
   @media screen and(min-width: 1280px) {
     padding-left: 44px;
     padding-right: 44px;
+    padding-bottom: 62px;
     margin-top: 32px;
     font-size: 16px;
     line-height: 1.75;
   }
 }
+
 .products__btn {
   display: block;
   width: 40px;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
-
   background-color: $main-light-color;
   border-radius: 50%;
-
   border: 1px $main-light-color;
+  transform: rotate(0);
+  transition: transform $duration $function;
+
+  &:hover,
+  &:focus {
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
 
   @media screen and(min-width: 768px) {
   }
   @media screen and(min-width: 1280px) {
   }
-}
-
-.products__btn:hover,
-.products__btn:focus {
-  cursor: pointer;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .products__btn__link__icon {
@@ -262,5 +274,46 @@
   width: 11px;
   height: 10px;
 
-  margin: 0 auto;
+  margin: 15px;
+}
+
+.shadow__btn:hover,
+.shadow__btn:focus {
+  filter: drop-shadow(-3px 2px 4px rgba(0, 0, 0, 0.25));
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*___________read more________________*/
+
+.extra-text {
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+  @media screen and(min-width: 1280px) {
+    display: none;
+  }
+}
+
+#read-more:checked ~ .extra-text {
+  display: block;
+}
+
+#read-more:checked ~ .read-more {
+  display: none;
+}
+
+#read-more-milkshake:checked ~ .extra-text {
+  display: block;
+}
+
+#read-more-milkshake:checked ~ .read-more-milkshake {
+  display: none;
+}
+
+#read-more-icecoffe:checked ~ .extra-text {
+  display: block;
+}
+
+#read-more-icecoffe:checked ~ .read-more-milkshake {
+  display: none;
 }
