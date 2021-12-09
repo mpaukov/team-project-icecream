@@ -3,10 +3,12 @@
 }
 
 .about {
+  z-index: 1;
+  position: relative;
   padding-top: 125px;
   padding-bottom: 39px;
 
-  background-image: url(../images/mobile/about/bckg-milk.png);
+  background-image: url('../images/mobile/about/bckg-milk.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 80%;
@@ -21,11 +23,6 @@
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 39px;
-
-    background-image: url(../images/mobile/about/bckg-milk.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 80%;
   }
 }
 
@@ -258,3 +255,33 @@
   color: $secondary-dark-color;
 }
 // --modal //
+
+.milk-left,
+.milk-right {
+  z-index: -1;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.milk-left {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  background-image: url('../images/desktop/about/milk-left.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 160px;
+  height: 179px;
+}
+
+.milk-right {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  background-image: url('../images/desktop/about/milk-right.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 268px;
+  height: 391px;
+}
